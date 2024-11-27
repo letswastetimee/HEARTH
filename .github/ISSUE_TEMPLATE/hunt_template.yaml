@@ -23,6 +23,16 @@ body:
   validations:
     required: true
 
+- type: input
+  id: email
+  attributes:
+    label: Contact Email
+    description: 'Provide your email address to receive updates and recognition for your submission. Your email will not be shared publicly. This is where we will send swag instructions'
+    placeholder: 'e.g., your-email@example.com'
+  validations:
+    required: true
+    pattern: '^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$'
+
 - type: textarea
   id: hypothesis
   attributes:
