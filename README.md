@@ -20,13 +20,14 @@ Generating effective hypotheses and ideas for threat hunting is hard. HEARTH pro
 
 ```
 HEARTH/
-├── Flames/              # Hypothesis-Driven hunts
-├── Embers/              # Baseline Analysis
-├── Alchemy/             # Model-Assisted & Algorithmic Hunting
-├── Forge/               # Development space
-├── Kindling/            # Resources & Templates
-├── Keepers/             # Guidelines & Standards
-└── Assets/              # Images & Logos
+├── [Flames/](https://github.com/letswastetimee/HEARTH/tree/main/Flames)              # Hypothesis-Driven hunts
+├── [Embers/](https://github.com/letswastetimee/HEARTH/tree/main/Embers)              # Baseline Analysis
+├── [Alchemy/](https://github.com/letswastetimee/HEARTH/tree/main/Alchemy)            # Model-Assisted & Algorithmic Hunting
+├── [Forge/](https://github.com/letswastetimee/HEARTH/tree/main/Forge)                # Development space
+├── [Kindling/](https://github.com/letswastetimee/HEARTH/tree/main/Kindling)          # Resources & Templates
+├── [Keepers/](https://github.com/letswastetimee/HEARTH/tree/main/Keepers)            # Guidelines & Standards
+└── [Assets/](https://github.com/letswastetimee/HEARTH/tree/main/Assets)              # Images & Logos
+
 ```
 
 ## 🔥 How to Contribute to HEARTH 
