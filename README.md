@@ -18,7 +18,6 @@ Generating effective hypotheses and ideas for threat hunting is hard. HEARTH pro
 
 ## 🔥 Repository Structure
 
-```
 HEARTH/
 ├── [Flames/](https://github.com/letswastetimee/HEARTH/tree/main/Flames)              # Hypothesis-Driven hunts
 ├── [Embers/](https://github.com/letswastetimee/HEARTH/tree/main/Embers)              # Baseline Analysis
@@ -27,8 +26,6 @@ HEARTH/
 ├── [Kindling/](https://github.com/letswastetimee/HEARTH/tree/main/Kindling)          # Resources & Templates
 ├── [Keepers/](https://github.com/letswastetimee/HEARTH/tree/main/Keepers)            # Guidelines & Standards
 └── [Assets/](https://github.com/letswastetimee/HEARTH/tree/main/Assets)              # Images & Logos
-
-```
 
 ## 🔥 How to Contribute to HEARTH 
 
