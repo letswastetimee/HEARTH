@@ -26,6 +26,13 @@ jobs:
               throw new Error("No issue found in the payload. This action is only triggered for new issues.");
             }
             
+            // Extract owner and repo explicitly
+            const owner = context.payload.repository.owner.login;
+            const repo = context.payload.repository.name;
+            
+            // Debug log to ensure correct owner and repo are extracted
+            console.log(`Owner: ${owner}, Repo: ${repo}`);
+            
             // Default labels to apply to all issues
             const defaultLabels = ['pending-review'];
             
@@ -38,13 +45,10 @@ jobs:
               defaultLabels.push('model-assisted');
             }
             
-            // Debug log to ensure correct owner and repo are set
-            console.log(`Owner: ${context.repo.owner}, Repo: ${context.repo.name}`);
-            
             // Add labels to the issue
             await github.rest.issues.addLabels({
-              owner: context.repo.owner, // Ensure this is correct
-              repo: context.repo.name,   // Ensure this is correct
+              owner,
+              repo,
               issue_number: issue.number,
-              labels: defaultLabels
+              labels: defaultLabels,
             });
