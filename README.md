@@ -5,9 +5,9 @@
 A community-driven repository for threat hunting ideas, methodologies, and research that serves as a central gathering place for hunters to share knowledge, collaborate on techniques, and advance the field of threat hunting.
 
 HEARTH incorporates ideas for **three distinct types** of hunts classified by the [PEAK Threat Hunting Framework](https://www.splunk.com/en_us/blog/security/peak-threat-hunting-framework.html):
-- **Flames**: Hypothesis-driven investigations with clear, testable hypotheses
-- **Embers**: Environment baselining and exploratory analysis
-- **Alchemy**: Model-assisted and algorithmic approaches to threat detection
+- **[Flames](https://github.com/letswastetimee/HEARTH/tree/main/Flames)**: Hypothesis-driven investigations with clear, testable hypotheses  
+- **[Embers](https://github.com/letswastetimee/HEARTH/tree/main/Embers)**: Environment baselining and exploratory analysis  
+- **[Alchemy](https://github.com/letswastetimee/HEARTH/tree/main/Alchemy)**: Model-assisted and algorithmic approaches to threat detection  
 
 ## 🔥 Why 
 Generating effective hypotheses and ideas for threat hunting is hard. HEARTH provides a collaborative environment where hunters can share, develop, and refine their methodologies while building a comprehensive knowledge base for the security community.
@@ -17,14 +17,16 @@ Generating effective hypotheses and ideas for threat hunting is hard. HEARTH pro
 - Inspire threat hunters with practical and theoretical hunting ideas
 
 ## 🔥 Repository Structure
-HEARTH/  
-├── [Flames/](https://github.com/letswastetimee/HEARTH/tree/main/Flames) - Hypothesis-Driven hunts  
-├── [Embers/](https://github.com/letswastetimee/HEARTH/tree/main/Embers) - Baseline Analysis  
-├── [Alchemy/](https://github.com/letswastetimee/HEARTH/tree/main/Alchemy) - Model-Assisted & Algorithmic Hunting  
-├── [Forge/](https://github.com/letswastetimee/HEARTH/tree/main/Forge) - Development space  
-├── [Kindling/](https://github.com/letswastetimee/HEARTH/tree/main/Kindling) - Resources & Templates  
-├── [Keepers/](https://github.com/letswastetimee/HEARTH/tree/main/Keepers) - Guidelines & Standards  
-└── [Assets/](https://github.com/letswastetimee/HEARTH/tree/main/Assets) - Images & Logos  
+```
+HEARTH/
+├── Flames/              # Hypothesis-Driven hunts
+├── Embers/              # Baseline Analysis
+├── Alchemy/             # Model-Assisted & Algorithmic Hunting
+├── Forge/               # Development space
+├── Kindling/            # Resources & Templates
+├── Keepers/             # Guidelines & Standards
+└── Assets/              # Images & Logos
+```
 
 ## 🔥 How to Contribute to HEARTH 
 
