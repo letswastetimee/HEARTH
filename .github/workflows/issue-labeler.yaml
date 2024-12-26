@@ -25,10 +25,10 @@ jobs:
             if (!issue) {
               throw new Error("No issue found in the payload. This action is only triggered for new issues.");
             }
-
+            
             // Default labels to apply to all issues
             const defaultLabels = ['pending-review'];
-
+            
             // Add labels based on issue title prefix
             if (issue.title.startsWith('[H]')) {
               defaultLabels.push('hypothesis-driven');
@@ -37,11 +37,14 @@ jobs:
             } else if (issue.title.startsWith('[M]')) {
               defaultLabels.push('model-assisted');
             }
-
+            
+            // Debug log to ensure correct owner and repo are set
+            console.log(`Owner: ${context.repo.owner}, Repo: ${context.repo.name}`);
+            
             // Add labels to the issue
             await github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.name,
+              owner: context.repo.owner, // Ensure this is correct
+              repo: context.repo.name,   // Ensure this is correct
               issue_number: issue.number,
               labels: defaultLabels
             });
