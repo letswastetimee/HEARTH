@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEARTH Repository Explorer</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #file-tree {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .folder {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+        .folder:hover, .file:hover {
+            background-color: #333;
+        }
+        .file {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #80cbc4;
+        }
+    </style>
+</head>
+<body>
+    <h1>HEARTH Repository</h1>
+    <ul id="file-tree"></ul>
+</body>
+</html>
