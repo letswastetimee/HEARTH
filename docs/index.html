@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEARTH Repository Explorer</title>
+    <title>HEARTH Repository</title>
     <script defer src="script.js"></script>
     <style>
         body {
@@ -12,46 +12,69 @@
             color: #e0e0e0;
             margin: 0;
             padding: 20px;
-            text-align: center;
         }
+
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
+            text-align: center;
         }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            height: 80vh;
+        }
+
         #file-tree {
-            width: 80%;
-            margin: auto;
-            text-align: left;
-            background-color: #1e1e1e;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        ul {
             list-style-type: none;
-            padding: 0;
+            padding: 15px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow-y: auto;
         }
+
+        #file-preview {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 15px;
+            overflow-y: auto;
+        }
+
         li {
             padding: 8px;
             margin: 5px 0;
             border-radius: 5px;
             cursor: pointer;
         }
+
         .folder {
             font-weight: bold;
             color: #ffcc00;
         }
-        .folder:hover, .file:hover {
-            background-color: #333;
-        }
+
         .file {
             margin-left: 20px;
             text-decoration: none;
             color: #80cbc4;
         }
+
+        li:hover {
+            background-color: #333;
+        }
     </style>
 </head>
 <body>
     <h1>HEARTH Repository</h1>
-    <ul id="file-tree"></ul>
+    <div class="container">
+        <!-- File Tree Column -->
+        <ul id="file-tree"></ul>
+        
+        <!-- File Preview Column -->
+        <div id="file-preview">
+            <p>Select a file to preview its contents here.</p>
+        </div>
+    </div>
 </body>
 </html>
