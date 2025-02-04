@@ -1,5 +1,5 @@
-const repo = "letswastetimee/HEARTH";
-const branch = "gh-pages"; // Change this if needed
+const repo = "letswastetimee/HEARTH"; // Your GitHub repo
+const branch = "gh-pages"; // Correct branch for GitHub Pages
 const apiBaseUrl = `https://api.github.com/repos/${repo}/contents`;
 
 async function fetchRepoContents(path = "") {
