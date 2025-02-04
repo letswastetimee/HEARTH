@@ -22,24 +22,26 @@
 
         .container {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 2fr; /* Left column for file tree, right column for preview */
             gap: 20px;
             height: 80vh;
         }
 
-        #file-tree {
-            list-style-type: none;
-            padding: 15px;
+        #file-tree, #file-preview {
             background-color: #1e1e1e;
             border-radius: 8px;
+            padding: 15px;
             overflow-y: auto;
         }
 
         #file-preview {
-            background-color: #1e1e1e;
-            border-radius: 8px;
-            padding: 15px;
-            overflow-y: auto;
+            white-space: pre-wrap; /* Ensure long text wraps */
+            word-wrap: break-word; /* Handle long words */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
         }
 
         li {
