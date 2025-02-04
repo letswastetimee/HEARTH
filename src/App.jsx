@@ -8,9 +8,11 @@ import rehypeSanitize from 'rehype-sanitize';
 // Configuration for excluding files and folders
 const EXCLUDED_ITEMS = [
   '.github',
+  '.vscode',
   'node_modules',
   'public',
   'src',
+  'docs',
   'package.json',
   'package-lock.json',
   'tailwind.config.js',
